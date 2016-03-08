@@ -1,0 +1,2 @@
+defmodule ElixirStudyGroup do
+end
