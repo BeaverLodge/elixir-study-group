@@ -1,20 +1,13 @@
-# Processes
+# Processes, GenServers and Agents
 
-**TODO: Add description**
+## How to ...
 
-## Installation
+  1. Use the test watcher to run the specs on save
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+        mix test.watch
 
-  1. Add processes to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:processes, "~> 0.0.1"}]
-        end
-
-  2. Ensure processes is started before your application:
-
-        def application do
-          [applications: [:processes]]
-        end
-
+  2. Implement the necessary functions to make the tests pass using processes
+  
+  3. Delete `@tag :skip` to move on to the next tests
+  
+  4. Commit your work to a named branch and submit a Pull Request
