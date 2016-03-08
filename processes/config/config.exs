@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :elixir_study_group, key: :value
+#     config :processes, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:elixir_study_group, :key)
+#     Application.get_env(:processes, :key)
 #
 # Or configure a 3rd-party app:
 #
