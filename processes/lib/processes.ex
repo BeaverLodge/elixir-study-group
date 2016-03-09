@@ -27,8 +27,9 @@ defmodule Processes do
   def greet do
     receive do
       {sender, msg} ->
-        send sender, {:ok, "Hello"}
+        send sender, {:ok, "Hello, "}
         greet
     end
   end
+
 end

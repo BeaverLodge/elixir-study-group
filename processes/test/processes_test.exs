@@ -13,17 +13,17 @@ defmodule ProcessesTest do
     assert_receive {:ok, "Hello, Dave!"}
   end
 
-  @tag :skip
+ @tag :skip
   test "Counting the number of requests" do
     count_greet = Processes.count_greeter
 
-    send count_greet, {self, "World!"}
+    send count_greet, {self}
 
-    assert_receive {:ok, "Hello, World! count: 1"}
+    assert_receive {:ok, "Hello, count: 1"}
 
-    send count_greet, {self, "World!"}
+    send count_greet, {self}
 
-    assert_receive {:ok, "Hello, World! count: 2"}
+    assert_receive {:ok, "Hello, count: 2"}
   end
 
 end
